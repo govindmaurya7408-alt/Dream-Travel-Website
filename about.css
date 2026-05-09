@@ -1,0 +1,264 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #eff5e5;
+    padding-top: 80px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #0d6efd;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #bd0f1a;
+}
+
+/* BOOKING BUTTON */
+
+.btn{
+    background-color: #ffd700;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #0d6efd;
+}
+
+/* =========================
+   VIDEO SECTION
+========================= */
+
+.video-container{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.video{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+video{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(2, 10, 170);
+}
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about{
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.about1{
+    text-align: center;
+    font-size: 30px;
+    color: darkblue;
+    margin-top: 30px;
+}
+
+.about2{
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.govind{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about3{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: #070707;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.footer-box h2{
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.footer-box p{
+    line-height: 28px;
+    color: #dddddd;
+}
+
+/* QUICK LINKS */
+
+.footer-box ul{
+    list-style: none;
+}
+
+.footer-box ul li{
+    margin-bottom: 12px;
+}
+
+.footer-box ul li a{
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover{
+    color: #ffb703;
+    padding-left: 5px;
+}
+
+/* SOCIAL LINKS */
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.social-links a:hover{
+    color: #ffb703;
+    transform: translateX(5px);
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom{
+    background-color: #001d2e;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    nav ul li{
+        margin: 10px;
+    }
+
+    .video{
+        font-size: 24px;
+    }
+
+    .about,
+    .about2{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .about1{
+        font-size: 24px;
+    }
+
+    .about3{
+        font-size: 22px;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .social-links{
+        align-items: center;
+    }
+}
+.head{
+    text-align: center;
+}
